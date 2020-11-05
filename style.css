@@ -73,7 +73,6 @@ h4 {
 #profile-area p {
     font-family: 'Hiragino Mincho Pro';
     font-size: 15px;
-    padding-bottom: 50%;
 }
 
 
@@ -94,14 +93,14 @@ h5 {
 }
 
 #sns {
-    color: white; 
-    background-color: black;
+    color:black; 
+    background-color:white;
 }
 
 #link-area {
     height: 300px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color:black;
 }
 
 
@@ -128,11 +127,12 @@ footer {
 
 .cards {
     display: flex;
-    background-color: black;
+    background-color: white
 }
 
 .card {
     width: auto;
+    margin-bottom: 15%;
 }
 
 .card-title {
@@ -194,6 +194,18 @@ footer p {
     .toptext {
         font-size: 10px;
     }
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    #profile-area p {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 15px;
+    }
+
+
 
     .cards {
         display: inline;;
