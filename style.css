@@ -1,3 +1,11 @@
+body {
+    position: relative;
+    
+}
+
+
+
+
 .top {
     position: relative;
 }
@@ -7,7 +15,7 @@
     position: absolute;
     color: white;
     top: 25%;
-    left: 34%;
+    left: 30%;
     font-size: 80px;
     border-bottom: 3px solid white;
     font-family: 'Hiragino Mincho Pro';
@@ -27,6 +35,9 @@
     color: white;
     font-size: 20px;
     margin-top: 13px;
+    font-family: 'Hiragino Mincho Pro';
+    font-style: normal;
+    font-weight: 100;
 }
 
 .nav-link {
@@ -34,18 +45,19 @@
 }
 
 .d-flex {
-    height: 800px;
+    height: 1000px;
 }
 
 h2 {
     font-family: 'Hiragino Mincho Pro';
     border-bottom: 1px solid black;
-    margin-top: 12%;
+    
 }
 
 h3 {
     font-family: 'Hiragino Mincho Pro';
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
+    padding-top: 50%;
 }
 
 
@@ -56,14 +68,13 @@ h4 {
 #profile-area p {
     font-family: 'Hiragino Mincho Pro';
     font-size: 15px;
+    padding-bottom: 50%;
 
 }
 
-#how-area {
-    color: white;
-    background-color: black;
+#favorite-area {
+    height: 300px;
 }
-
 
 
 h5 {
@@ -76,9 +87,15 @@ h5 {
     font-size: 40px
 }
 
-#sns-area {
+#sns {
     color: white; 
     background-color: black;
+}
+
+#link-area {
+    height: 300px;
+    background-color: black;
+    color: white;
 }
 
 
@@ -98,11 +115,18 @@ footer {
     opacity: 0.7;
     border-radius: 50%;
     border: solid 0.5px white;
-    margin-top: 25%;
+    margin-top: 5%;
+}
+
+
+
+.cards {
+    display: flex;
+    background-color: black;
 }
 
 .card {
-    margin-top: 40%;
+    width: auto;
 }
 
 .card-title {
@@ -118,15 +142,83 @@ footer {
 
 .list-unstyled {
     margin-top: 5%;
-    margin-right: 25%;
+    margin-right: 15%;
+    flex: auto;
 }
 
 .media {
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-left: 25%;
+    flex: auto;
 }
 
 h6 {
-    border-bottom: 2px solid gray;
     padding-bottom: 10px;
     color:black;
+    font-family: 'Hiragino Mincho Pro';
+
+}
+
+.mybest {
+    font-family: 'Hiragino Mincho Pro';
+    color: gray;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+
+@media (max-width: 670px) {
+
+    .top img{
+        width: 670px;
+        height: 300px;
+    }
+
+    .top p {
+        font-size: 25px;
+        top: 40%;
+        left: 30%;
+
+    }
+
+    .toptext {
+        font-size: 10px;
+    }
+
+    .cards {
+        display: inline;;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .card2, .card3 {
+        margin-top: 10%;
+    }
+
+    .media {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .mybest {
+        font-size: 10px;
+    }
+
+    .nav1 {
+        width: auto;
+        font-size: 10px;
+        margin-left: 0;
+    }
+
+    .collapse {
+        width: auto;
+        margin-left: 0;
+    }
+
 }

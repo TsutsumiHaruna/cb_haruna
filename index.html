@@ -5,37 +5,38 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <script src="https://code.jquery.com/jquery-git.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
-
 
     <title>TSUTSUMI</title>
     
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; position: fixed; width: 100%;">
-        <div class="container">
+        <div class="container nav1">
             <a class="navbar-brand" href="#">
-                <img style="width: 70px;" src="./img/logo01.JPG">
+                <img class="navbar-brandimg" style="width: 70px;" src="./img/logo01.JPG">
             </a>
-                
+            
+
+
+
             <div class="collapse navbar-collapse" style="margin-left: 20px;"id="navbarSupportedContent">
                 <ul class="nav nav-tabs">
                     <li class="nav-item active ml-3">
                         <a id="profile-link" class="nav-link header-link" style="color:black;">PROFILE</a>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a id="how-link" class="nav-link header-link" style="color:black;">HOW TO USE</a>
+                        <a href="../CODEBASE/html_lesson/index2.html" target="blank" id="how-link" class="nav-link header-link" style="color:black;">HOW TO USE</a>
                     </li>
                     <li class="nav-item active ml-3">
                         <a id="favorite-link" class="nav-link header-link" style="color:black;">FAVORITE</a>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a id="sns-link" class="nav-link header-link" style="color:black;">LINK</a>
+                        <a id="link-link" class="nav-link header-link" style="color:black;">LINK</a>
                     </li>
                     
                     </li>
@@ -59,35 +60,34 @@
 
 
     <div id="profile-area" class="d-flex">
-        <div class="m-auto">
+        <div class="m-auto flex-auto">
             <h2>About Me</h2>
-        <br><br><br>
+        <br>
             <h4>
             <img  style="width: 80px;" src="./img/04.JPG">
-            <a>Tsutsumi Haruna</a>
+            <a>Tsutsumi Haruna</a><br><br>
         
             <p>1999年2月10日生まれ、福岡県久留米市出身。現在、経済学専攻の大学４年次。<br>
             小中高で陸上をしていて、スポーツや運動が大好きです。<br>
             香水も大好きですが、最近LUSHにハマってます。</p>
-     </div>>
+     </div>
     </div>
-    <div id="how-area" class="d-flex">
-      <div class="m-auto">
-        <h3>How to use Perfume</h3>
-        
-        </div>
-    </div>
+
     <div id="favorite-area" class="d-flex" >
         <div class="m-auto">
-            <h2>My favorite Perfume</h2>
+            <h2>My favorite Perfumes</h2>
         </div>
-        <ul class="list-unstyled">
+    </div>
+    <div id="mybestitem" class="block">
+      <div class="container flex-auto">
+          <div class="row flex-auto">
+        <ul class="list-unstyled flex-auto">
           <li class="media">
             <img class="bd-placeholder-img mr-3" width="100" height="100" src="./img/mybest01.JPG" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
             <div class="media-body">
               <h6 class="mt-0 mb-1">ジルスチュアート　サムシングピュアブルー
                 オードパルファン</h6>
-              <p>香水のキツさがなく、清潔感漂う香りです。<br>
+              <p class="mybest">香水のキツさがなく、清潔感漂う香りです。<br>
               香りに“透明感”を感じます。</p>
             </div>
           </li>
@@ -105,8 +105,9 @@
             <div class="media-body">
               <h6 class="mt-0 mb-1">ランバン　エクラドゥアルページュ
                 オードパルファン</h6>
-              <p c>Cras sit amet nibh libero, in gravida nulla. <br>
-              Nulla vel metus scelerisque ante sollicitudin. 
+              <p class="mybest">比較的お手頃な価格なので、香水初心者お方にもおすすめの商品です。<br>
+                ボトルのトップにはホワイトダイヤがあしらわれ、見た目も魅力的です。<br>
+               </p>
             </div>
           </li>
           <li class="media">
@@ -114,15 +115,27 @@
             <div class="media-body">
               <h6 class="mt-0 mb-1">インディアンナイトジャスミン
                 オードトワレ</h6>
-              Cras sit amet nibh libero, in gravida nulla. <br>
-              Nulla vel metus scelerisque ante sollicitudin. 
+              <p class="mybest"> 深い色気のある甘い香りがします。くどくないジャスミンのいい香りです。<br>
+                個人的に冬につけるのをオススメします！</p>
             </div>
           </li>
         </ul>
+        </div>
+      </div>
     </div>
-    <div id="sns-area" class="block">
-        <div class="container">
-            <div class="row">
+
+
+
+
+    </div>
+    <div id="link-area" class="d-flex" >
+      <div class="m-auto">
+          <h3>LINK</h3>
+      </div>
+    </div>
+    <div id="sns" class="block">
+        <div class="container flex-auto">
+            <div class="cards">
               <div class="col">
                 
                 <div class="card">
@@ -131,36 +144,35 @@
                     <h6 class="card-title">JILL STUART</h6>
                     <p class="card-text">公式オンラインショップです♪<br><br>
                         新商品の情報をいち早く確認できます！</p>
-                    <a href="https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/r/r101035/" class="btn btn-secondary"><i class="far fa-arrow-alt-circle-right"></i> Go</a>
+                    <a href="https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/r/r101035/" target="blank" class="btn btn-secondary"><i class="far fa-arrow-alt-circle-right"></i> Go</a>
                   </div>
                 </div>
               </div>
               <div class="col">
                 
-                <div class="card">
+                <div class="card card2">
                   <img class="card-img-top" src="./img/THEBODYSHOPlink.JPG" alt="Card image cap">
                   <div class="card-body">
                     <h6 class="card-title">THE BODY SHOP</h6>
                     <p class="card-text">THE BODY SHOPの公式サイトです<br>
                         自然の原料をベースにしたコスメブランドです</p>
-                    <a href="https://www.the-body-shop.co.jp" class="btn btn-secondary"><i class="far fa-arrow-alt-circle-right"></i> Go</a>
+                    <a href="https://www.the-body-shop.co.jp"  target="blank" class="btn btn-secondary"><i class="far fa-arrow-alt-circle-right"></i> Go</a>
                   </div>
                 </div>
               </div>
               <div class="col">
                 
-                <div class="card">
+                <div class="card card3">
                   <img class="card-img-top" src="./img/LUSHlink.JPG" alt="Card image cap">
                   <div class="card-body">
                     <h6 class="card-title">LUSH</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://jn.lush.com/" class="btn btn-secondary"><i class="far fa-arrow-alt-circle-right"></i> Go</a>
+                    <a href="https://jn.lush.com/"  target="blank" class="btn btn-secondary"><i class="far fa-arrow-alt-circle-right"></i> Go</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
 
 
     </div>
@@ -169,7 +181,20 @@
 
    
 
-    <footer>             
+    <footer>          
+      <div class="footer">
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+       <p>
+        2020 CODEBASE-12期<br>
+        堤　春菜
+       </p>
+
+
+
+
+      </div>
       <i class="fab fa-twitter"></i>
                    
       <i class="fab fa-instagram"></i>

@@ -27,9 +27,9 @@ $("#favorite-link").on('click', function(){
     $(window).scrollTop(favoriteArea);
 });
 
-$("#sns-link").on('click', function(){
-    const snsArea = $("#sns-area").offset().top;
-    $(window).scrollTop(snsArea);
+$("#link-link").on('click', function(){
+    const link = $("#link-area").offset().top;
+    $(window).scrollTop(link);
 });
 
 $(".fab").hover(
@@ -45,5 +45,3 @@ $(".fab").hover(
     }
 );
 
-
-$("")
